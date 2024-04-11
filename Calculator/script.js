@@ -206,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(time != 0){
             var span = document.getElementById("span5");
             span.innerHTML = time;
+            time = 0;
         }
         else{
             var span = document.getElementById("span5");
