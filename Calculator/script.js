@@ -332,8 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ['Total savings lifetime ( ₹ )', document.getElementById('span1').textContent],
             ['Initial cost accordingly ( ₹ )', document.getElementById('span2').textContent],
             ['Requirement of Panel (KW/hr)', document.getElementById('span3').textContent],
-            ['You will get subsidy upto', document.getElementById('span4').textContent],
-            ['Return time on investment(years)', document.getElementById('span5').textContent]
+            ['Return time on investment(years)', document.getElementById('span5').textContent],
+            ['You will get subsidy upto', document.getElementById('span4').textContent]
         ];
 
         // Merge table data and variables
