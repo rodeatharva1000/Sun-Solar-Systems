@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <a href="..\Home\index.html"><div><b>Home</b></div></a>
+        <a href="..\Solar Energy\index.html"><div><b>Solar Energy</b></div></a>
+        <a href="..\Calculator\index.html" id="main"><div><b>Calculator</b></div></a>
+        <a href="..\FAQ\index.html"><div><b>FAQ</b></div></a>
+    </nav>
+    <hr>
+    <main>
+        <div id="container1">
+            <div class="data">
+                <h3 id="header">Enter the data below</h3><br><br><br>
+                <form id="myForm">
+    
+                    <label id="c2" for="unit">Monthly Unit Consumption:</label><br><br>
+                    <input type="number" id="unit" name="unit"><br><br>
+
+                    <div id="userTypeGroup">
+                        <div class="form-group">
+                            <label class="incr">Please select your user type:</label>
+                            <select class="incr" name="userType" id="userType">
+                                <option value="individual">Individual Households(Residential)</option>
+                                <option value="group">Group Housing Societies(Residential)</option>
+                                <option value="commertial">Commertial User</option>
+                                <option value="industrial">Industrial User</option>
+                                <option value="agricultural">Agricultural User</option>
+                                <option value="public">Public User</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="incr">Do you want to install batteries for your energy system?</label>
+                        <div class="incr" class="radio-options">
+                            <label><input type="radio" name="batteries" value="yes"> Yes</label>
+                            <label><input type="radio" name="batteries" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="incr">Do you use an single phase or triple phase energy system?</label>
+                        <div class="incr" class="radio-options">
+                            <label><input type="radio" name="system" value="single"> single</label>
+                            <label><input type="radio" name="system" value="three"> Triple</label>
+                        </div>
+                    </div>
+                    
+                    
+                    <button id="submitbutton">SUBMIT</button>
+                </form>
+            </div>
+            <img id="logo" src="logo.png" alt="logo">
+        </div>
+        <div id="container2">
+            <div>
+                <div class="hide" id="result">Total savings lifetime ( ₹ )  : <span id="span1">None</span></div>
+                <div class="hide" id="result">Initial cost accordingly ( ₹ )  : <span id="span2">None</span></div>
+                <div class="hide" id="result">Requirment of Pannel (KW/hr)  : <span id="span3">None</span></div>
+                <div class="hide" id="result">You will get subsidy upto : <span id="span4">Not Applicable</span></div>
+            </div>
+            <table class="hide" id="table">
+                <tr>
+                    <th>Year</th>
+                    <th>Electricity Bill</th>
+                    <th>Solar Maintainance</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+            </table>
+        </div>
+        <div class="hide" id="piechart"></div>
+        <div class="hide" id="curve_chart"></div>
+    </main>
+    <button class="hide" id="exportBtn">Export to Excel</button>
+    <footer>
+        <a href="https://github.com" target="_blank"><img src="github.svg" alt="GitHub"></a>
+        <a href="https://twitter.com" target="_blank"><img src="twitter-x.svg" alt="Twitter"></a>
+        <a href="mailto:your-email@gmail.com" target="_blank"><img src="envelope.svg" alt="Gmail"></a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    color: rgb(159, 221, 238);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#background{
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    height: 105%;
+    width: 100vw;
+    position: absolute;
+    filter: brightness(0.3);
+}
+
+#navbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    position: sticky;
+    top: 0; 
+    background-color: rgb(27, 67, 75); 
+    z-index: 100; 
+    padding: 1%;
+    color: white;
+}
+#container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+    width: 15vw;
+    filter: invert(100%);
+    background-color: rgb(222, 96, 213);
+    padding: 25px;
+    margin-top: 10vh;
+    border-radius: 40px;
+}
+
+
+#poem{
+    margin: 7%;
+    font-size: 20px;
+    text-align :center;
+}
+
+#container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#btn{
+    padding: 12px;
+    background-color: chartreuse;
+    border: 0px;
+    font-size: large;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#name{
+    padding-top: 25px;
+    font-size: 30px;
+    color: chartreuse;
+}
+
+#main{
+    color: rgb(14, 191, 236);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#main_c{
+    display: flex;
+    padding: 0% 2%;
+}
+#c1{
+    background-color: rgba(28, 58, 36, 0.7); 
+    font-size: larger;
+    padding: 2%;
+   
+    height: 50%;
+    margin-top: 3vh;
+}
+#c2{
+    background-color: rgba(28, 58, 36, 0.7); 
+    font-size: larger;
+    padding: 2%;
+   
+    height: 50%;
+    margin-top: 3vh;
+}
+
+#main{
+    color: rgb(14, 191, 236);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      filter: invert(100%);
+  }

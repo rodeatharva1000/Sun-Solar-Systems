@@ -1,0 +1,191 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color:rgb(50, 57, 61);
+}
+
+#navbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    position: sticky;
+    top: 0; 
+    background-color: rgb(27, 67, 75); 
+    z-index: 100; 
+    padding: 1%;
+    color: white;
+}
+
+
+#logo{
+    width: 20%;
+    height: 20%;
+    filter: invert(100%);
+    background-color: rgb(211, 129, 228);
+    padding: 1%;
+    border-radius:30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    font-size: 20px;
+    border: 3px solid black;
+    background-color: #57585a;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid black; 
+    padding: 8px;
+}
+th {
+    background-color: rgb(14, 191, 236);
+}
+
+#container2{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+#header{
+    display: inline;
+    font-size: 2rem;
+    color: rgb(164, 226, 102);
+}
+#myForm{
+    display: inline;
+}
+
+#bill{
+    width: 35.5vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 2%;
+}
+
+#unit{
+    width: 35.5vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 2%;
+}
+
+#c1, #c2{
+    font-size: 1.5rem;
+}
+
+#submitbutton{
+    cursor: pointer;
+    padding: 15px 50px;
+    border-radius: 30px;
+    background-color: rgb(14, 191, 236);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#container3 div{
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+#result{
+    font-size: 30px;
+    padding: 2% 5%;
+    color: rgb(255, 255, 255);
+}
+
+.hide{
+    display: none;
+}
+
+
+#main{
+    color: rgb(14, 191, 236);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.incr{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 18vw;
+    padding: 3% 0%;
+    margin: 4% 0%;
+    border-radius: 30px;
+}
+
+#exportBtn{
+    cursor: pointer;
+    margin: 5%;
+    border-radius: 30px;
+    background-color: rgb(73, 237, 13);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1%;
+}
+
+.data{
+    background-color: rgb(71, 75, 68);
+    padding: 5%;
+    border-radius: 3%;
+}
+
+#result{
+    background-color:rgb(71, 75, 68);
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+#piechart{
+    margin: 5%;
+    height: 40vh;
+    width: 89vw;
+}
+
+#curve_chart{
+    margin: 5%;
+    height: 100vh;
+    width: 89vw;
+}
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      filter: invert(100%);
+  }
