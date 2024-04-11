@@ -293,7 +293,7 @@ function drawLineChart() {
             element.classList.remove("hide");
         });
 
-        total1 = 0, total2 = 0, total3 = 0;
+        total1 = 0, total2 = 0, total3 = 0, time = 0;
 
     });
 });
