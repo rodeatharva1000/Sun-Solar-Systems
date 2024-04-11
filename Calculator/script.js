@@ -207,6 +207,11 @@ document.addEventListener("DOMContentLoaded", function() {
             var span = document.getElementById("span5");
             span.innerHTML = time;
         }
+        else{
+            var span = document.getElementById("span5");
+            span.innerHTML = "System in loss";
+        }
+            
         var span = document.getElementById("span1");
         span.innerHTML = Math.round(total1 - temp2);
 
