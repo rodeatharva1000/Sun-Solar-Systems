@@ -196,6 +196,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             total2 = total2 + (unitValue * (1000/120));
         }
+        var time = 0;
+        for (var i = 0; i < 25; i++) {
+            if(bill_plus[i] > bill_minus[i]){
+                time = i+1;
+                break;
+            }
+        }
+        if(time != 0){
+            var span = document.getElementById("span5");
+            span.innerHTML = time;
+        }
         var span = document.getElementById("span1");
         span.innerHTML = Math.round(total1 - temp2);
 
@@ -321,7 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ['Total savings lifetime ( ₹ )', document.getElementById('span1').textContent],
             ['Initial cost accordingly ( ₹ )', document.getElementById('span2').textContent],
             ['Requirement of Panel (KW/hr)', document.getElementById('span3').textContent],
-            ['You will get subsidy upto', document.getElementById('span4').textContent]
+            ['You will get subsidy upto', document.getElementById('span4').textContent],
+            ['Return time on investment(years)', document.getElementById('span5').textContent]
         ];
 
         // Merge table data and variables
