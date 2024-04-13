@@ -3,7 +3,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("submitbutton").addEventListener("click", function(event) {
         event.preventDefault();
         
-        
+        // Get the position of the submit button
+        var submitButtonPosition = document.getElementById("submitbutton").getBoundingClientRect().top;
+
+        // Calculate the current scroll position
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Calculate the target scroll position
+        var targetScrollPosition = scrollPosition + submitButtonPosition;
+
+        // Smoothly scroll to the target position
+        smoothScrollTo(targetScrollPosition, 1000); // Adjust the duration as needed
         var unitValue = document.getElementById("unit").value;
 
         var batteries = document.querySelector('input[name="batteries"]:checked').value;
@@ -356,3 +366,27 @@ document.addEventListener('DOMContentLoaded', () => {
         XLSX.writeFile(wb, 'data.xlsx');
     }
 });
+
+// Function to smoothly scroll to a target position
+function smoothScrollTo(targetPosition, duration) {
+    var startPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var ease = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, ease);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
