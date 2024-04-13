@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if(time != 0){
             var span = document.getElementById("span5");
-            span.innerHTML = (time + "Years");
+            span.innerHTML = (time + " Years");
             time = 0;
         }
         else{
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function() {
         span.innerHTML = (" ₹ " + Math.round(temp1));
         
         var span = document.getElementById("span3");
-        span.innerHTML = (requirment + "KWh Nearly");
+        span.innerHTML = (requirment + " KWh Nearly");
 
 
 
