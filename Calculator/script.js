@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
         smoothScrollTo(targetScrollPosition, 1000); // Adjust the duration as needed
         var unitValue = document.getElementById("unit").value;
 
+        unitValue = unitValue/120;
+        var requirment = unitValue.toFixed(1);
+        unitValue = requirment* 120;
+        
         var batteries = document.querySelector('input[name="batteries"]:checked').value;
         var phase = document.querySelector('input[name="system"]:checked').value;
         var userType = document.getElementById('userType').value;
@@ -89,54 +93,54 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if(total4 >= 1 && total4 < 2){
                 var span = document.getElementById("span4");
-                span.innerHTML = 18000;
+                span.innerHTML = (" ₹  " + 18000);
                 total4 = 18000;
             }
             else if(total4 >= 2 && total4 < 3){
                 var span = document.getElementById("span4");
-                span.innerHTML = 36000;
+                span.innerHTML = (" ₹  " + 36000);
                 total4 = 36000;
             }
             else if(total4 >= 3 && total4 < 4){
                 var span = document.getElementById("span4");
-                span.innerHTML = 54000;
+                span.innerHTML = (" ₹  " + 54000);
                 total4 = 54000;
             }
             else if(total4 >= 4 && total4 < 5){
                 var span = document.getElementById("span4");
-                span.innerHTML = 63000;
+                span.innerHTML = (" ₹  " + 63000);
                 total4 = 63000;
                 
             }
             else if(total4 >= 5 && total4 < 6){
                 var span = document.getElementById("span4");
-                span.innerHTML =  72000;
+                span.innerHTML =  (" ₹  " + 72000);
                 total4 = 72000;
             }
             else if(total4 >= 6 && total4 < 7){
                 var span = document.getElementById("span4");
-                span.innerHTML = 81000;
+                span.innerHTML = (" ₹  " + 81000);
                 total4 = 81000;
             }
             else if(total4 >= 7 && total4 < 8){
                 var span = document.getElementById("span4");
-                span.innerHTML = 90000;
+                span.innerHTML = (" ₹  " + 90000);
                 total4 = 90000;
             }
             else if(total4 >= 8 && total4 < 9){
                 var span = document.getElementById("span4");
-                span.innerHTML = 99000;
+                span.innerHTML = (" ₹  " + 99000);
                 total4 = 99000;
             }
             else if(total4 >= 9 && total4 < 10){
                 var span = document.getElementById("span4");
-                span.innerHTML = 108000;
+                span.innerHTML = (" ₹  " + 108000);
                 total4 = 108000;
             }
             else if(total4 >= 10){
                 var span = document.getElementById("span4");
                 span.innerHTML = "Fixed Rate : 117000";
-                total4 = 117000;
+                total4 = (" ₹  " + 117000);
             }
         }
 
@@ -148,27 +152,27 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if(total4 >= 100 && total4 < 200){
                 var span = document.getElementById("span4");
-                span.innerHTML = 900000;
+                span.innerHTML = (" ₹  " + 900000);
                 total4 = 900000;
             }
             else if(total4 >= 200 && total4 < 300){
                 var span = document.getElementById("span4");
-                span.innerHTML = 1800000;
+                span.innerHTML = (" ₹  " + 1800000);
                 total4 = 1800000;
             }
             else if(total4 >= 300 && total4 < 400){
                 var span = document.getElementById("span4");
-                span.innerHTML = 2700000;
+                span.innerHTML = (" ₹  " + 2700000);
                 total4 = 2700000;
             }
             else if(total4 >= 400 && total4 < 500){
                 var span = document.getElementById("span4");
-                span.innerHTML = 3600000;
+                span.innerHTML = (" ₹  " + 3600000);
                 total4 = 3600000;
             }
             else if(total4 >= 500){
                 var span = document.getElementById("span4");
-                span.innerHTML = 4500000;
+                span.innerHTML = (" ₹  " + 4500000);
                 total4 = 4500000;
             }
         }
@@ -215,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if(time != 0){
             var span = document.getElementById("span5");
-            span.innerHTML = time;
+            span.innerHTML = (time + "Years");
             time = 0;
         }
         else{
@@ -224,14 +228,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
             
         var span = document.getElementById("span1");
-        span.innerHTML = Math.round(total1 - temp2);
+        span.innerHTML = (" ₹ " + Math.round(total1 - temp2));
 
         span = document.getElementById("span2");
-        span.innerHTML = Math.round(temp1);
+        span.innerHTML = (" ₹ " + Math.round(temp1));
         
-        total3 = unitValue/120;
         var span = document.getElementById("span3");
-        span.innerHTML = ("Nearly  " + total3.toFixed(1));
+        span.innerHTML = (requirment + "KWh Nearly");
 
 
 
