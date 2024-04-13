@@ -65,6 +65,7 @@ body{
     font-size: large;
     border-radius: 25px;
     cursor: pointer;
+    margin-bottom: 23%;
 }
 #name{
     padding-top: 25px;
