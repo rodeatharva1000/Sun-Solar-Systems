@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         total3 = unitValue/120;
         var span = document.getElementById("span3");
-        span.innerHTML = total3.toFixed(2);
+        span.innerHTML = ("Nearly  " + total3.toFixed(1));
 
 
 
