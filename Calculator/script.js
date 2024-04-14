@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
             requirment += 1;
         }
         
+        unitValue = requirment* 120;
+        
         var batteries = document.querySelector('input[name="batteries"]:checked').value;
         var phase = document.querySelector('input[name="system"]:checked').value;
         var userType = document.getElementById('userType').value;
