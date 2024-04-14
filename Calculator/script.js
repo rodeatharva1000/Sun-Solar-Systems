@@ -18,7 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         unitValue = unitValue/120;
         var requirment = unitValue.toFixed(1);
-        unitValue = requirment* 120;
+        var temp = requirment % 1;
+        if(temp <= 0.5 && temp >= 0){
+            requirment = Math.floor(requirment);
+            requirment += 0.5;
+        }
+        else if(temp > 0.5 && temp <= 0.9){
+            requirment = Math.floor(requirment);
+            requirment += 1;
+        }
         
         var batteries = document.querySelector('input[name="batteries"]:checked').value;
         var phase = document.querySelector('input[name="system"]:checked').value;
